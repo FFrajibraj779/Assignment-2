@@ -1,0 +1,119 @@
+ /* common design */
+ section{
+    margin-bottom: 80px;
+ }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+.container{
+width: 1000px;
+margin: auto;
+}
+main{
+
+}
+ /*----- banner section design starts here------- */
+#banner-section{
+ background-color: black;
+ color: white;
+ border-radius: 20px;
+ padding: 50px 25px;
+}
+.banner-section-wrapper{
+  display: flex;
+  align-items: center;
+}
+.banner-section-description{
+    width: 50%;
+    padding:10px;
+}
+.banner-title{
+ font-size: 50px;
+}
+.banner-section-img{
+    background-image: url(images/Banner\ Image.png);
+    background-repeat: no-repeat;
+   
+    /* width: 50%;
+    display: flex;
+    justify-content: center; */
+    
+
+}
+.banner-section-description p{
+         line-height: 27px;
+         word-spacing: 1px;
+}
+.watch-btn{
+    background-color: #DD0000;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 6px 0px #dd0000;
+}
+.watch-btn:hover{
+    background-color: orangered;
+    color: white;
+    transition: 1s;
+    
+}
+
+ /*----- banner section design ends here------- */
+
+
+          /*------- live watch section design starts here------  */
+
+          #live-watch-section{
+
+          }
+          .live-watch-section-wrapper{
+
+          }
+          .live-leftside-section{
+             background-color: black;
+           
+             width: 210px;
+              
+            
+            
+          }
+          .live-leftside-wrapper{
+            display: inline-block;
+            
+          }
+          
+          .live-leftside-section ul li{
+            background-color: white;
+            list-style: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 0px 7px 0px white;
+            padding: 10px;
+            margin-bottom: 10px;
+           
+               }
+          .live-leftside-section ul li:last-child{
+            background-color: #DD0000;
+         
+         
+          }
+          .live-leftside-section ul li:last-child a{
+        
+            color: white;
+         
+          }
+          .live-leftside-section ul li a{
+                 color: black;
+            text-decoration: none;
+          }
+.live-rightside-section{
+
+}
+.live
+
+              /*------- live watch section design starts here------  */

@@ -72,30 +72,41 @@ main{
 
           }
           .live-watch-section-wrapper{
-
+            display: flex;
           }
           .live-leftside-section{
              background-color: black;
-           
-             width: 210px;
+             border-radius: 5px;
+           margin-top: 10px;
+       
+             width: 200px;
+             height: 200px;
               
             
             
           }
           .live-leftside-wrapper{
-            display: inline-block;
             
+            display: flex;
           }
-          
+          .live-leftside-section ul{
+
+          }
           .live-leftside-section ul li{
             background-color: white;
             list-style: none;
             border-radius: 5px;
             text-align: center;
             box-shadow: 0px 0px 7px 0px white;
-            padding: 10px;
+            padding: 12px 0;
             margin-bottom: 10px;
            
+               }
+               .live-leftside-section ul li:hover{
+                background-color: #DD0000;
+                 color: white;
+                transition: 1s;
+                text-decoration: underline;
                }
           .live-leftside-section ul li:last-child{
             background-color: #DD0000;
@@ -103,17 +114,91 @@ main{
          
           }
           .live-leftside-section ul li:last-child a{
-        
+           
             color: white;
          
           }
           .live-leftside-section ul li a{
-                 color: black;
+            color: black;
             text-decoration: none;
+            font-size: 17px;
           }
 .live-rightside-section{
 
 }
-.live
+.live-rightside-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.live-rightside-cards{
+         width: 250px;
+         box-shadow:2px 0px 20px 0px #33333312;
+        
+         padding: 10px;
+}
+.card-img img{
+  width: 100%;
 
+}
+.card-btn{
+  border: 1px solid;
+  border-radius: 5px;
+ width: 50%;
+ text-align: center;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+.cards-info{
+  display: flex;
+  
+
+   
+}
+.card-info-time p{
+margin-right: 14px;
+}
               /*------- live watch section design starts here------  */
+
+
+
+/*----------- footer section design starts here---- */
+footer{
+  background-color: black;
+  color:#B9B9B9 ;
+}
+.footer-title{
+  text-align: center;
+ padding-top: 10%;
+ page-break-inside: 0;
+ 
+}
+
+.footer-list{
+ 
+}
+.footer-list ul{
+  display: flex;
+  justify-content: center;
+  padding-bottom:10% ;
+  
+ 
+
+}
+.footer-list ul li{
+list-style: none;
+margin:0 20px ;
+}
+.footer-list ul li:hover{
+  text-decoration: underline;
+}
+.footer-list ul li a{
+ text-decoration: none;
+ color:#B9B9B9 ;
+}
+
+
+
+
+/*----------- footer section design starts here---- */
+
+

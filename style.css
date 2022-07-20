@@ -30,11 +30,37 @@ main{
     padding:10px;
 }
 .banner-title{
+  position: relative;
  font-size: 50px;
+ animation: text-slide 3s ease .2s infinite forwards ;
+ animation-play-state: running;
+ transition:  animation 3s;
+}
+@keyframes text-slide {
+ 0%{
+         color: firebrick;
+   content: "the greatest";
+ } 
+ 25%{
+  content: "show";
+  color: blueviolet;
+ } 
+50%{
+  color: #555;
+  content: "the";
+}
+75%{
+  content: "the";
+}
+100%{
+  color: #B9B9B9;
+  content: "earth";
+}
 }
 .banner-section-img{
-    background-image: url(images/Banner\ Image.png);
+    animation: img-slide 4s ease-in .2s infinite alternate ;
     background-repeat: no-repeat;
+    transition: animation 3s;
    
     /* width: 50%;
     display: flex;
@@ -42,6 +68,17 @@ main{
     
 
 }
+      @keyframes img-slide {
+             0%{
+              background-image: url(images/kaka.png);
+             }
+             50%{
+              background-image: url(i);
+             }
+             100%{
+              background-image: url(images/Banner Image.png);
+             }
+      }
 .banner-section-description p{
          line-height: 27px;
          word-spacing: 1px;
@@ -60,9 +97,7 @@ main{
     background-color: orangered;
     color: white;
     transition: 1s;
-    
-    
-    
+   
 }
 
  /*----- banner section design ends here------- */
@@ -91,9 +126,7 @@ main{
             
             display: flex;
           }
-          .live-leftside-section ul{
-
-          }
+          
           .live-leftside-section ul li{
             background-color: white;
             list-style: none;
@@ -134,7 +167,7 @@ main{
 }
 .live-rightside-cards{
          width: 250px;
-         box-shadow:2px 0px 20px 0px ##ddd;
+         box-shadow:2px 0px 20px 0px #ddd;
          border-radius: 10px;
          padding: 10px;
 }
@@ -228,6 +261,15 @@ justify-content: center;
 
 /*----------- footer section design starts here---- */
 
+              
+                     /* ----------animation design--------  */
+
+
+
+
+
+ 
+
      /* ----------media quriya for Mobile View---------- */
 
      @media only screen and (max-width:688px){
@@ -310,15 +352,7 @@ justify-content: center;
        .live-leftside-section{
             width: 0; 
             height: 100px;
-             
-          
-       
-          
-            
-              
-            
-            
-          }
+             }
         .live-leftside-wrapper ul li{
            
            

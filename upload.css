@@ -1,0 +1,378 @@
+ /* common design */
+ section{
+    margin-bottom: 80px;
+ }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+.container{
+width: 1000px;
+margin: auto;
+}
+main{
+
+}
+ /*----- banner section design starts here------- */
+#banner-section{
+ background-color: black;
+ color: white;
+ border-radius: 20px;
+ padding: 50px 25px;
+}
+.banner-section-wrapper{
+  display: flex;
+  align-items: center;
+}
+.banner-section-description{
+    width: 50%;
+    padding:10px;
+}
+.banner-title{
+  position: relative;
+ font-size: 50px;
+ animation: text-slide 3s ease .2s infinite forwards ;
+ animation-play-state: running;
+ transition:  animation 3s;
+}
+@keyframes text-slide {
+ 0%{
+         color: firebrick;
+   content: "the greatest";
+ } 
+ 25%{
+  content: "show";
+  color: blueviolet;
+ } 
+50%{
+  color: #555;
+  content: "the";
+}
+75%{
+  content: "the";
+}
+100%{
+  color: #B9B9B9;
+  content: "earth";
+}
+}
+.banner-section-img{
+    background-image: url(images/Banner\ Image.png);
+    background-repeat: no-repeat;
+   
+    /* width: 50%;
+    display: flex;
+    justify-content: center; */
+    
+
+}
+.banner-section-description p{
+         line-height: 27px;
+         word-spacing: 1px;
+}
+.watch-btn{
+    background-color: #DD0000;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    box-shadow: 1px 1px 6px 0px #dd0000;
+}
+.watch-btn:hover{
+    background-color: orangered;
+    color: white;
+    transition: 1s;
+    
+    
+    
+}
+
+ /*----- banner section design ends here------- */
+
+
+          /*------- live watch section design starts here------  */
+
+          
+          .live-watch-section-wrapper{
+            display: flex;
+          }
+          .live-leftside-section{
+             background-color: black;
+             border-radius: 5px;
+             margin-right: 10px;
+       
+             width: 200px;
+             height: 200px;
+              
+            
+            
+          }
+          .live-leftside-wrapper{
+            
+            display: flex;
+          }
+          .live-leftside-section ul{
+
+          }
+          .live-leftside-section ul li{
+            background-color: white;
+            list-style: none;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 0px 7px 0px white;
+            padding: 12px 0;
+            margin-bottom: 10px;
+           
+               }
+               .live-leftside-section ul li:hover{
+                background-color: #DD0000;
+                 color: white;
+                transition: 1s;
+                text-decoration: underline;
+               }
+          .live-leftside-section ul li:last-child{
+            background-color: #DD0000;
+         
+         
+          }
+          .live-leftside-section ul li:last-child a{
+           
+            color: white;
+         
+          }
+          .live-leftside-section ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+          }
+.live-rightside-section{
+
+}
+.live-rightside-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+.live-rightside-cards{
+         width:225px;
+         box-shadow:  1px 0px 2px 0px #5c5555;
+         border-radius:10px;
+         padding:10px;
+}
+.card-img{
+ display: flex;
+ 
+}
+.card-img img{
+  width: 100%;
+ 
+}
+ .card-btn{
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+ }
+.card-info-time p{
+margin-right: 14px;
+}
+.view-btn{
+ 
+  visibility: hidden;
+  padding: 10px 20px;
+  background-color: #DD0000;
+  color: white;
+  text-align: center;
+  border: none;
+}
+              /*------- live watch section design starts here------  */
+
+
+
+/*----------- footer section design starts here---- */
+footer{
+  background-color: black;
+  color:#B9B9B9 ;
+ 
+ 
+}
+.footer-title{
+  text-align: center;
+ padding-top: 10%;
+ page-break-inside: 0;
+ 
+}
+ 
+.footer-list ul{
+  display: flex;
+  justify-content: center;
+
+  }
+.footer-list ul li{
+list-style: none;
+margin:0 20px ;
+}
+.footer-list ul li:hover{
+  text-decoration: underline;
+}
+.footer-list ul li a{
+ text-decoration: none;
+ color:#B9B9B9 ;
+}
+.footer-icon{
+  padding-bottom:10% ;
+}
+.footer-icon ul{
+display: flex;
+justify-content: center;
+}
+.footer-icon ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+.footer-icon ul li a{
+     background-color: wheat;
+     padding: 5px;
+     font-size: 20px;
+}
+.footer-icon ul li a:hover{
+    background-color: black;
+    color: white;
+    transition: 1x;
+}
+
+
+
+/*----------- footer section design starts here---- */
+
+     /* ----------media quriya for Mobile View---------- */
+
+     @media only screen and (max-width:688px){
+          section{
+            margin-bottom: 20px;
+          }
+      .container{
+       width: 100%;
+      }
+      #banner-section{
+      padding: 0;
+      
+      }
+      .banner-section-wrapper{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+   
+      }
+      .banner-title{
+        font-size: 33px;
+      }
+    
+      .live-watch-section-wrapper{
+        display: grid;
+        justify-items: center;
+           
+      }
+      .live-rightside-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .live-rightside-cards{
+        width: 100%;
+        margin: 10px;
+      }
+      .live-leftside-section{
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 10px;
+         
+        }
+     .live-leftside-section ul li{
+      box-shadow: 0px 0px 1px 0px #555;
+        }
+        .footer-list ul{
+          display: grid;
+          justify-items: start;
+           
+
+        }
+        .footer-title{
+      margin: auto;
+        }
+        .footer-list ul li{
+          margin-bottom: 10px;
+        }
+     }
+
+     /* -----media quriya for tablet view------- */
+  
+      @media only screen and (min-width:688px) and (max-width:992px) {
+        section{
+          margin-bottom: 20px;
+        }
+        .container{
+          width: 100%;
+        }
+           
+        .live-watch-section-wrapper{
+          display: grid;
+         
+          
+         }
+         
+        .live-leftside-wrapper ul{
+          display: flex;
+
+        
+       }
+       .live-leftside-section{
+            width: 0; 
+            height: 100px;
+             
+          
+          }
+        .live-leftside-wrapper ul li{
+           
+           
+          padding: 10px 50px;
+       
+        }
+        .live-leftside-section{
+          background-color: white;
+          border-radius: 5px;
+          margin-top: 10px;
+           
+          }
+        .live-rightside-cards{
+          width: 100%;
+          margin: 10px;
+        }
+       
+       .live-leftside-section ul li{
+        box-shadow: 0px 0px 1px 0px #555;
+          }
+          .live-rightside-wrapper{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+          }
+          .last-card{
+            display: none;
+          }
+          .view-btn{
+            visibility: visible;
+              margin-left: 50%;
+             
+          
+  
+          }
+          .watch-info{
+            text-align: center;
+          }
+          .footer-list ul{
+            display: flex;
+            flex-wrap: wrap;
+          }
+      }

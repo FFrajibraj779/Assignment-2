@@ -61,6 +61,8 @@ main{
     color: white;
     transition: 1s;
     
+    
+    
 }
 
  /*----- banner section design ends here------- */
@@ -77,7 +79,7 @@ main{
           .live-leftside-section{
              background-color: black;
              border-radius: 5px;
-           margin-top: 10px;
+             margin-top: 10px;
        
              width: 200px;
              height: 200px;
@@ -132,8 +134,8 @@ main{
 }
 .live-rightside-cards{
          width: 250px;
-         box-shadow:2px 0px 20px 0px #33333312;
-        
+         box-shadow:2px 0px 20px 0px ##ddd;
+         border-radius: 10px;
          padding: 10px;
 }
 .card-img img{
@@ -143,8 +145,8 @@ main{
 .card-btn{
   border: 1px solid;
   border-radius: 5px;
- width: 50%;
- text-align: center;
+  width: 50%;
+  text-align: center;
   padding: 5px 0;
   margin-top: 5px;
 }
@@ -157,6 +159,15 @@ main{
 .card-info-time p{
 margin-right: 14px;
 }
+.view-btn{
+ 
+  visibility: hidden;
+  padding: 10px 20px;
+  background-color: #DD0000;
+  color: white;
+  text-align: center;
+  border: none;
+}
               /*------- live watch section design starts here------  */
 
 
@@ -165,6 +176,8 @@ margin-right: 14px;
 footer{
   background-color: black;
   color:#B9B9B9 ;
+ 
+ 
 }
 .footer-title{
   text-align: center;
@@ -172,18 +185,12 @@ footer{
  page-break-inside: 0;
  
 }
-
-.footer-list{
  
-}
 .footer-list ul{
   display: flex;
   justify-content: center;
-  padding-bottom:10% ;
-  
- 
 
-}
+  }
 .footer-list ul li{
 list-style: none;
 margin:0 20px ;
@@ -195,10 +202,160 @@ margin:0 20px ;
  text-decoration: none;
  color:#B9B9B9 ;
 }
-
+.footer-icon{
+  padding-bottom:10% ;
+}
+.footer-icon ul{
+display: flex;
+justify-content: center;
+}
+.footer-icon ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+.footer-icon ul li a{
+     background-color: wheat;
+     padding: 5px;
+     font-size: 20px;
+}
+.footer-icon ul li a:hover{
+    background-color: black;
+    color: white;
+    transition: 1x;
+}
 
 
 
 /*----------- footer section design starts here---- */
 
+     /* ----------media quriya for Mobile View---------- */
 
+     @media only screen and (max-width:688px){
+          section{
+            margin-bottom: 20px;
+          }
+      .container{
+       width: 100%;
+      }
+      #banner-section{
+      padding: 0;
+      
+      }
+      .banner-section-wrapper{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+   
+      }
+      .banner-title{
+        font-size: 33px;
+      }
+    
+      .live-watch-section-wrapper{
+        display: grid;
+        justify-items: center;
+           
+      }
+      .live-rightside-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .live-rightside-cards{
+        width: 100%;
+        margin: 10px;
+      }
+      .live-leftside-section{
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 10px;
+         
+        }
+     .live-leftside-section ul li{
+      box-shadow: 0px 0px 1px 0px #555;
+        }
+        .footer-list ul{
+          display: grid;
+          justify-items: start;
+           
+
+        }
+        .footer-title{
+      margin: auto;
+        }
+        .footer-list ul li{
+          margin-bottom: 10px;
+        }
+     }
+
+     /* -----media quriya for tablet view------- */
+  
+      @media only screen and (min-width:688px) and (max-width:992px) {
+        section{
+          margin-bottom: 20px;
+        }
+        .container{
+          width: 100%;
+        }
+           
+        .live-watch-section-wrapper{
+          display: grid;
+          
+         }
+         
+        .live-leftside-wrapper ul{
+          display: flex;
+
+        
+       }
+       .live-leftside-section{
+            width: 0; 
+            height: 100px;
+             
+          
+       
+          
+            
+              
+            
+            
+          }
+        .live-leftside-wrapper ul li{
+           
+           
+          padding: 10px 50px;
+       
+        }
+        .live-leftside-section{
+          background-color: white;
+          border-radius: 5px;
+          margin-top: 10px;
+           
+          }
+        .live-rightside-cards{
+          width: 100%;
+          margin: 10px;
+        }
+       
+       .live-leftside-section ul li{
+        box-shadow: 0px 0px 1px 0px #555;
+          }
+          .live-rightside-wrapper{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2,1fr);
+          }
+          .last-card{
+            display: none;
+          }
+          .view-btn{
+            visibility: visible;
+              margin-left: 50%;
+             
+          
+  
+          }
+          .footer-list ul{
+            display: flex;
+            flex-wrap: wrap;
+          }
+      }

@@ -28,6 +28,7 @@ main{
 .banner-section-description{
     width: 50%;
     padding:10px;
+  
 }
 .banner-title{
   position: relative;
@@ -58,25 +59,24 @@ main{
 }
 }
 .banner-section-img{
-    animation: img-slide 4s ease-in .2s infinite alternate ;
-    background-repeat: no-repeat;
-    transition: animation 3s;
-   
-    /* width: 50%;
-    display: flex;
-    justify-content: center; */
-    
+ 
+ height: 50vh;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+   animation: img-slide 10s ease .2s infinite forwards ;
 
-}
-      @keyframes img-slide {
+  }
+   
+   @keyframes img-slide {
              0%{
               background-image: url(images/kaka.png);
              }
              50%{
-              background-image: url(i);
+              background-image: url(images/Background.png);
              }
              100%{
-              background-image: url(images/Banner Image.png);
+              background-image: url(images/Banner.png);
              }
       }
 .banner-section-description p{
@@ -292,6 +292,10 @@ justify-content: center;
       .banner-title{
         font-size: 33px;
       }
+      .banner-section-img{
+        height: 50vh;
+        width: 100%;
+      }
     
       .live-watch-section-wrapper{
         display: grid;
@@ -338,7 +342,10 @@ justify-content: center;
         .container{
           width: 100%;
         }
-           
+        .banner-section-img{
+          height: 30vh;
+          width: 100%;
+        }
         .live-watch-section-wrapper{
           display: grid;
           
